@@ -1,0 +1,17 @@
+{
+  "name": "angularLoginBackend",
+  "version": "0.0.1",
+  "homepage": "https://github.com/RomanSek/angularLoginBackend",
+  "authors": [
+    "Roman Sęk <r.sek@clearcode.cc>"
+  ],
+  "description": "loginBackend service used to register logins and generate correct headers for requests that require logged user. It mocks $httpBackend.when method (https://docs.angularjs.org/api/ngMockE2E/service/$httpBackend#when).",
+  "main": "index.js",
+  "keywords": [
+    "angular",
+    "test",
+    "e2e",
+    "backend"
+  ],
+  "license": "LGPL"
+}
