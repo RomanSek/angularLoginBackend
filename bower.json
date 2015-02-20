@@ -5,7 +5,7 @@
   "authors": [
     "Roman Sęk <r.sek@clearcode.cc>"
   ],
-  "description": "loginBackend service used to register logins and generate correct headers for requests that require logged user. It mocks $httpBackend.when method (https://docs.angularjs.org/api/ngMockE2E/service/$httpBackend#when).",
+  "description": "ccLoginBackend service used to register login requests and generate correct headers for requests that require authenticated user. It uses $httpBackend.when method to mock login responses.",
   "main": "index.js",
   "keywords": [
     "angular",
