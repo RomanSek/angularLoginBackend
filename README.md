@@ -151,3 +151,4 @@ bower install RomanSek/angularLoginBackend --save-dev
 ## TODO List
 * Make `responseOverride` last (optional) parameter of `ccLoginBackend.config`. Move it's description to
     [angularApiTest](https://github.com/RomanSek/angularApiTest) plugin docs.
+* Create unit tests
