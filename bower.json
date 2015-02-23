@@ -1,17 +1,17 @@
 {
-  "name": "angularLoginBackend",
-  "version": "0.0.1",
-  "homepage": "https://github.com/RomanSek/angularLoginBackend",
+  "name": "angular-cc-login-backend",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ClearcodeHQ/angular-login-backend",
   "authors": [
     "Roman Sęk <r.sek@clearcode.cc>"
   ],
-  "description": "ccLoginBackend service used to register login requests and generate correct headers for requests that require authenticated user. It uses $httpBackend.when method to mock login responses.",
-  "main": "index.js",
+  "description": "Service used to register login requests and generate correct headers for requests that require authenticated user.",
+  "main": "src/ccLoginBackend.js",
   "keywords": [
     "angular",
     "test",
     "e2e",
-    "backend"
+    "mock"
   ],
   "license": "LGPL"
 }

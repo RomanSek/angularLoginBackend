@@ -5,9 +5,9 @@ It's a service similar to [$httpBackend](https://docs.angularjs.org/api/ngMockE2
 It should be used to register login requests and responces to use them later (when defining endpoints that should
 require user authentication).
 
-This service was designed to work with [angularApiTest](https://github.com/RomanSek/angularApiTest) plugin, but can be
-used separately. Parameters that are used only by [angularApiTest](https://github.com/RomanSek/angularApiTest) plugin
-will be indicated.
+This service was designed to work with [angular-api-test](https://github.com/ClearcodeHQ/angular-api-test.git) plugin,
+but can be used separately. Parameters that are used only by
+[angular-api-test](https://github.com/ClearcodeHQ/angular-api-test.git) plugin will be indicated.
 
 ## How it works?
 Service should be configured before first usage. After that - login requests should be registered with it. Lastly it
@@ -23,9 +23,9 @@ Use `ccLoginBackend.config(requestIdGetter, sessionGetter, responseOverride, ses
     `ccLoginBackend.when` method. It returns session object (e.g. token) retrived from login response used later by
     `sessionFactory` and `responseOverride`.
 * `responseOverride(status, data, headers, statusText, session)` - **Function** It's
-    [angularApiTest](https://github.com/RomanSek/angularApiTest) plugin specific function that overrides test server
-    response using session object retrived with `sessionGetter` from mocked response. It'll be done before responses are
-    matched.
+    [angular-api-test](https://github.com/ClearcodeHQ/angular-api-test.git) plugin specific function that overrides test
+    server response using session object retrived with `sessionGetter` from mocked response. It'll be done before
+    responses are matched.
 * `sessionFactory(session)` - **Function** It's a generator function that uses session object retrived with
     `sessionGetter`. It returns header object that should be used in authenticated requests. It's used by
     `ccLoginBackend.session` method.
@@ -125,14 +125,14 @@ $httpBackend.whenGET(
 ## How to install?
 
 ```bash
-bower install RomanSek/angularLoginBackend --save-dev
+bower install ClearcodeHQ/angular-login-backend --save-dev
 ```
 
 ## How to use in module?
 * Include script in index.html:
 
     ```html
-    <script src="bower_components/angularLoginBackend/index.js">
+    <script src="bower_components/angular-login-backend/src/cc-login-backend.js">
     ```
 * Import **ccMockE2E** module:
 
@@ -150,5 +150,5 @@ bower install RomanSek/angularLoginBackend --save-dev
 
 ## TODO List
 * Make `responseOverride` last (optional) parameter of `ccLoginBackend.config`. Move it's description to
-    [angularApiTest](https://github.com/RomanSek/angularApiTest) plugin docs.
+    [angular-api-test](https://github.com/ClearcodeHQ/angular-api-test.git) plugin docs.
 * Create unit tests
