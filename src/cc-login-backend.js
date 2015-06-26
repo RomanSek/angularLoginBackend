@@ -20,7 +20,7 @@
 (function() {
     'use strict';
 
-    angular.module('ccMockE2E').factory('ccLoginBackend', ['$httpBackend', function($httpBackend) {
+    angular.module('ccMockE2E', ['ngMockE2E']).factory('ccLoginBackend', ['$httpBackend', function($httpBackend) {
         var loginBackend = {
             _register: {},
             config: function(requestIdGetter, sessionGetter, responseOverride, sessionFactory) {
